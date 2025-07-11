@@ -1,0 +1,7 @@
+{
+  "name": "Pushwoosh Demo",
+  "short_name": "Pushwoosh",
+  "gcm_sender_id": "482941778795",
+  "display": "standalone",
+  "gcm_user_visible_only": true
+}
