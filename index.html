@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pushwoosh Web Push Demo</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Pushwoosh SDK from CDN -->
+  <script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+
+  <script type="text/javascript">
+    var Pushwoosh = Pushwoosh || [];
+    Pushwoosh.push(['init', {
+      logLevel: 'info',
+      applicationCode: '27BCF-43CB2',
+      apiToken: 'LNx7dFsbmfr1CTjIa4BD2MNnmktZRS4YriIEO0HIQv',
+      defaultNotificationTitle: 'OMO',
+      defaultNotificationImage: 'https://via.placeholder.com/128',
+      autoSubscribe: false,
+      subscribeWidget: {
+        enable: true
+      },
+      tags: {
+        'Name': 'Test User'
+      }
+    }]);
+  </script>
+</head>
+<body>
+  <h1>Pushwoosh Web Push Test Page (GitHub Pages)</h1>
+  <p>If prompted, please allow notifications in your browser.</p>
+</body>
+</html>
